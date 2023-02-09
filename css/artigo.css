@@ -1,0 +1,25 @@
+.artigo{
+    max-width: 40em;                                /*largura máxima dos caracteres referente ao tamanho da fonte*/
+    padding: 0 12px;                                /*margeamento do texto*/
+    margin: 12px auto;                              /*margeamento do elemento*/
+    color: #202122;                               /*cor do texto refente a WikiPedia*/
+}
+
+.titulo{
+    font-family: 'Times New Roman', Times, serif;   /*fonte do texto*/
+    line-height: 1.3;                               /*distancia vertical entre as linhas do texto*/
+    word-break: break-word;                         /*indica pro navegador "qubrar a palavra" a depender do tamnaho*/
+    margin: 0;                                      /*margeamento do elemento*/
+    padding: 0;                                     /*margeamento do texto*/
+}
+
+.paragrafo{
+    font-family: Arial, Helvetica, sans-serif;      /*fonte do texto*/
+    line-height: 1.65;                              /*distância entre os paragrafos*/
+    margin: .5em 0 1em 0;                           /*margeamento do paragrafo 1nº-c, 2nº-d, 3nº-b, 4nº-e*/
+}
+
+.codigo{
+    padding: .2em .5em;
+    border: 1px solid #c8ccd1;
+}

@@ -1,0 +1,39 @@
+body{
+    margin: 0;
+}
+
+a{
+    color: #3366cc;                               /*cor do hyperlink(ancora) referente a WikiPedia*/
+}
+
+a:not(:hover){                                      /*ancora:negação(:ação do mouse)*/
+    text-decoration: none;                          /*decoração do texto nula - retirada do padrão sublinhado*/
+}
+
+.cabecalho{
+    padding: 12px 24px;                             /*margem interna do elemento; 1º valor referência c-b, 2º valor d-e*/
+    background-color: #eaecf0;                    /*cor referente a Wikipedia*/
+}
+
+.cabecalho-conteudo{                                /*criação de calsse para alterar posição do cabeçalho*/
+    max-width: 40em;                                /*largura máxima dos caracteres referente ao tamanho da fonte*/
+    margin: 0 auto;                                 /*margeamento c-b(nulo) e d-e(automatico)*/
+}
+
+.logo-figura{
+    margin: 0;                                      /*margem dos elementos de figura*/
+    font-family: 'Times New Roman', Times, serif;   /*fonte utilizada*/
+    display: flex;                                  /*organização da logo (trouxe o texto para o lado)*/
+    align-items: center;                            /*alinhamento dos elementos da logo*/
+}
+
+.logo-nome{
+    margin: 0 12px;                                 /*posicionamento do texto da logo com afastamento a direita*/
+    font-size: 35px;                                /*tamanho do texto*/
+}
+
+.rodape{
+    background-color: #eaecf0;                    /*cor referente a WikiPedia*/
+    text-align: center;                             /*alinhamento do texto*/
+    padding: 12px;                                  /*margeamento do texto*/
+}
