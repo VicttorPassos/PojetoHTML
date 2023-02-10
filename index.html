@@ -1,74 +1,87 @@
-<!DOCTYPE html>
-<html lang="pt=br">
-<head>
-    <meta charset="UTF-8">
+<!DOCTYPE html> <!--ndica ao navegador que este é um documento HTML5-->
+<html lang="pt-BR"> <!--elemento raiz de uma página HTML(HTML tag)-->
+<head> <!--elemento onde colocamos informações sobre o documento-->
+    <meta charset="UTF-8"> <!--elemento opcional. Ele indica ao navegador algumas informações sobre o documento (met tag)-->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TreinaWiki</title>
-    <link rel="stylesheet" href="css/pagina.css">
-    <link rel="stylesheet" href="css/artigo.css">
-    <link rel="shortcut icon" href="imagens/wikipedia.ico" type="image/x-icon">
+    <title>Meu Site</title> <!--indica o título da página;-->
+    <link rel="stylesheet" type="text/css" href="styles.css" > <!--importação de arquivo CSS/acesso externo-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Long+Cang&display=swap" rel="stylesheet">
 </head>
-<body>
+<body> <!--é o corpo do nosso documento, onde escrevemos o conteúdo da página.-->
     
-    <header class="cabecalho" >
-        <div class="cabecalho-conteudo" >
-            <figure class="logo-figura" >
-                <img width="60" height="60"
-                    src="imagens/Wikipedia-logo.png" 
-                    alt="Logo TreinaWiki">
-                <figcaption class="logo-nome" >TreinaWiki</figcaption>
-            </figure>
-        </div>
-    </header>
+    <h1>TreinaWeb</h1> <!--Titulo principal-->
+    <h2>TreinaWeb</h2> <!--Sub-titulo principal-->
+    <sub><ins>Olá</ins></sub> <sup><del><em>Web</em></del></sup> <small>><strong>Devbelopers!</strong></small> 
+    <!--(em)=italico; (strong)=negrito; (ins)=sublinhado; (del)=riscado; (small)=diminui texto; (sup)=eleva o texto; (sub)=desce um nivel o texto. Estilização deve ser com CSS-->
+    <a href="contato.html">Contato</a>
+    <a
+        target="_blank"
+        rel="noreferrer noopener"
+        href="https://google.com"> <!--referenciando paginas e abrindo em nova aba com o (_blank); (noreferrer e noopoener)=segurança para não haver acesso a pagina-->
+        google
+    </a>
+    <a
+        download="Piratas"
+        href="imagens/IMG-20201201-WA0091.jpg"
+    >
+        <br><img       
+        height="200"
+        width="200"
+        alt="Piratas"
+        src= "imagens/IMG-20201201-WA0091.jpg">  <!--inseção de figura e seus parametros-->
+        <figcaption>Logo dos Piratas</figcaption>
+    Download da imagem</a> <!--download de arquivo/imagem-->
+    
+    <q> <!--Citações-->
+        <br>Com <mark>grandes poderes</mark> vêm <wbr>grandes responsabilidades <!--(br)=quebra intencional do texto; (wbr)=sugestão de querbra do texto em um dimensionamento do browser; (mark)=destaca o texto/marcador de texto-->
+    </q>
+    <hr> <!--linha horizontal pra semparar conteúdos-->
+    <p>
+        O <code>console.log()</code> imprime um texto no console <!--(code)=deixa a fonte diferente/trecho de codigo-->
+        <br><time datetime="2023-02-06"> 06 de fevereiro </time> <!--hora no formato padrão do PC-->
+        <br><time datetime="PT2H40M"> 2 horas e 40 minutos </time> <!--duração-->
+    </p>
+    <p>
+        <ruby>
+            水
+            <rt>mizu/água</rt>
+        </ruby>
+    </p>
+    <p>
+        A tag <code>&lt;h1&gt;</code> serve para titulos <!--(&lt; tag &gt;)=serve para escrever uma TAG sem que ela seja considerada código do programa-->
 
-    <main class="artigo" >
-        <section>
-            <h1 class="titulo" >HTML</h1>
-            <div>Uma linguagem de marcação utilizada na construção de páginas da web</div>
-            <hr>
+        <figure>
+            <br><img       
+            height="200"
+            width="200"
+            alt="Piratas"
+            src= "imagens/IMG-20201201-WA0091.jpg">  <!--inseção de figura e seus parametros-->
+            <figcaption>Logo dos Piratas</figcaption> <!--legenda para a imagem-->
 
-            <p class="paragrafo" >
-                <strong>HTML</strong> (abreviação para a <a href="https://pt.wikipedia.org/wiki/L%C3%ADngua_inglesa" >expressão inglesa</a>  <em>HyperText Markup Language</em>, que significa: "Linguagem de Marcação de Hipertexto") é uma <a href="https://pt.wikipedia.org/wiki/Linguagem_de_marca%C3%A7%C3%A3o" >linguagem de marcação</a> utilizada na construção de <a href="https://pt.wikipedia.org/wiki/P%C3%A1gina_web" >páginas na Web</a>. Documentos HTML podem ser interpretados por <a href="https://pt.wikipedia.org/wiki/Navegador_(inform%C3%A1tica)" >navegadores</a>. A <a href="https://pt.wikipedia.org/wiki/Tecnologia" >tecnologia</a>  é fruto da junção entre os padrões <a href="https://pt.wikipedia.org/wiki/HyTime" >HyTime</a> e <a href="https://pt.wikipedia.org/wiki/SGML" >SGML</a>.
-            </p>
-            <p class="paragrafo" >
-                <a href="https://pt.wikipedia.org/wiki/HyTime" >HyTime</a> é um padrão para a representação estruturada de hipermídia e conteúdo baseado em tempo. Um documento é visto como um conjunto de eventos concorrentes dependentes de tempo (como áudio, vídeo, etc.), conectados por <a href="https://pt.wikipedia.org/wiki/Hiperliga%C3%A7%C3%A3o" >hiperligações</a> (em inglês: hyperlink e link). O padrão é independente de outros padrões de processamento de texto em geral.
-            </p>
-            <p class="paragrafo" >
-                <a href="https://pt.wikipedia.org/wiki/SGML" >SGML</a> é um padrão de formatação de textos. Não foi desenvolvido para hipertexto, mas tornou-se conveniente para transformar documentos em hiper-objetos e para descrever as ligações.
-            </p> 
-        </section>
+        </figure>
 
-        <section>
-            <h2 class="titulo" >História</h2>
-
-            <p class="paragrafo">Tim Berners-Lee (físico britânico) criou o HTML original (e outros protocolos associados como o HTTP), numa estação NeXTcube, usando o ambiente de desenvolvimento NeXTSTEP. Na época, a linguagem não era uma especificação, mas uma coleção de ferramentas para resolver um problema de Tim: a comunicação e disseminação das pesquisas entre ele e o seu grupo de colegas. A sua solução, combinada com a então emergente internet pública (que tornar-se-ia a Internet), ganhou atenção mundial.
-            </p>
-            <p class="paragrafo">As primeiras versões do HTML foram definidas com regras sintáticas flexíveis, o que ajudou aqueles sem familiaridade com a publicação na Web. Através do tempo, a utilização de ferramentas para autoria de HTML aumentou, assim como a tendência em tornar a sintaxe cada vez mais rígida. Apesar disso, por questões históricas (retrocompatibilidade), os navegadores ainda hoje conseguem interpretar páginas web que estão longe de ser um código HTML válido.    </p>
-            <p class="paragrafo">A linguagem foi definida em especificações formais na década de 1990, inspiradas nas propostas originais de Tim Berners-Lee em criar uma linguagem baseada em SGML para a Internet. A primeira publicação foi esboçada por Berners-Lee e Dan Connolly e publicada em 1993 na IETF, como uma aplicação formal para o SGML (com uma DTD em SGML definindo a gramática). A IETF criou um grupo de trabalho para o HTML no ano seguinte, e publicou o HTML 2.0 em 1995. Desde 1996, as especificações HTML vêm sendo mantidas, com o auxílio de fabricantes de software, pelo World Wide Web Consortium (W3C).[1] Apesar disso, em 2000 a linguagem tornou-se também uma norma internacional (ISO/IEC 15445:2000). A recomendação HTML 4.01 foi publicada no final de 1999 pelo W3C. Uma errata ainda foi lançada em 2001.
-            </p>
-            <p class="paragrafo">Desde a publicação do HTML 3.5 no final de 1997, o grupo de trabalho da W3C tem cada vez mais — e de 2002 a 2006, de forma exclusiva — focado no desenvolvimento do XHTML, uma especificação HTML baseada em XML que é considerada pela W3C como um sucessor do HTML.[2][3][4] O XHTML faz uso de uma sintaxe mais rigorosa e menos ambígua para tornar o HTML mais simples de ser processado e estendido.
-            </p>
-            <p class="paragrafo">Em janeiro de 2008 o W3C publicou a especificação do HTML5 como Working Draft. Apesar de sua sintaxe ser semelhante à de SGML, o HTML5 abandonou qualquer tentativa de ser uma aplicação SGML e definiu explicitamente sua própria serialização "html", além de uma alternativa baseada em XML, o XHTML5.[5]
-            </p>
-        </section>
-        
-        <section>
-            <h2 class="titulo" >Marcas (tags)</h2>
-
-            <p class="paragrafo" >
-            Todo documento HTML possui marcadores (do inglês: tags), palavras entre parênteses angulares (chevron) (<code class="codigo">&lt;</code> e <code class="codigo">&gt;</code>); esses marcadores são os comandos de formatação da linguagem. Um elemento é formado por um nome de marcador (tag), atributos, valores e filhos (que podem ser outros elementos ou texto). Os atributos modificam os resultados padrões dos elementos e os valores caracterizam essa mudança. Exemplo de um elemento simples (não possui filhos):
-            </p>
-        </section>
-        
+      
+    </p>
 
 
-    </main>
 
+    <h1>TREINAWEB</h1>
+    <input type="text">
+    <input type="number" value="123">
+   
+    <input type="checkbox">
 
-    <footer class="rodape" >
-        <a href="#" >Voltar ao Topo</a>
-    </footer>
+    <br><a href="contato.html"> Contato </a>
+    <a href="https://google.com/contato"> Google </a>
+
+<p>
+    VICTORLEONARDOCPASSOS
+</p>
+
 
 </body>
 </html>
+
