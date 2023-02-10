@@ -1,0 +1,140 @@
+p{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: x-large;
+    color: white;
+    letter-spacing: .5px;
+}
+
+div{
+    display: inline-block;
+    width: calc(100% / 33);                     /*calc serve para dimensionar elementos através de calculos*/
+    height: 100px;
+    background-color: black .5;
+}
+
+body{
+    background-color: #345CF3;
+    background-color: hsl(0, 100%, 50%);
+}
+
+h1{               
+    color: white;
+    background-color: rgb(0, 0, 0, 0.5);
+    border: 5px solid #33993b;
+    opacity: .5;
+}
+
+/*p{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: x-large;
+    color: white;
+    font-weight: normal;                            #estilização de texto
+    text-indent: 15px;
+    text-align: right;
+    text-decoration: dashed;
+    text-transform: uppercase;
+    text-shadow: 5px 5px 2px black;
+}
+
+
+
+@font-face { #declaração de fonte customizada
+    font-family: nome que deseja dar a fonte ;
+    src: url(caminho onde a fonte se encontra);
+}
+
+
+a:active{           pseudo-classe ACTIVE - referencia uma ação de clicar               
+    color: green;
+}
+
+
+a[href="contato" i]{  O 'i' serve para indicar que não deve fazer diferença entre letras maiusculas e minusculas
+    background: red;
+    color: white;
+}
+
+
+a[href*="contato"]{     referenciando TAG (*=) que contenha o valor em [] em qualquer posição
+    background: red;
+    color: white;
+}
+
+
+a[href$="contato"]{       referenciando TAG ($=) terminada pelo valor em []
+    background: red;
+    color: white;
+}
+
+
+a[href^="contato"]{         referenciando TAG (^=) iniciado pelo valor em []
+    background: red;
+    color: white;
+}
+
+
+input[readonly]{            estilizando através de atributos
+    background: red;
+    color: white;
+}
+
+
+h1 ~ span{                  tag SPAN +(precedido indiretamente) da tag H
+    background: red;
+    color: white;
+}
+
+
+h1 + span{                  tag SPAN +(precedido diretamente) da tag H1
+    background: red;
+    color: white;
+}
+
+
+li > span{                  tag SPAN >(ligada diretamente) a tag LI
+    background: red;
+    color: white;
+}
+
+
+li span{                    tag SPAN ligada hierarquicamente a tag LI
+    background: red;
+    color: white;
+}
+
+Sintaxe do CSS. seletor(tag){
+    propriedades: valore
+}*/
+
+
+/*CSS INLINE
+
+<div style="background-color: blue;" ></div>
+
+
+CSS INTERNO
+    <head>
+<style>
+  div{
+    background-color: blue;
+}
+</style>
+</head>
+<body>
+<div></div>
+</body>
+
+
+CSS EXTERNO
+    <head>
+<link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <div></div>
+</body>
+
+
+Força dos seletores
+* -> nome de tags -> nome de classes -> ids
+
+Prefira sempre utilizar classes*/
